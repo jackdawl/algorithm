@@ -17,7 +17,7 @@ public class FibonacciImplementation {
      * Implement Fibonacci function recursively
      *
      * @param n Greater than 0
-     * @return integer
+     * @return long type value
      */
     public static long recFib(int n) {
         if (n <= 2) {
@@ -31,7 +31,7 @@ public class FibonacciImplementation {
      * Fibonacci function is implemented using loops
      *
      * @param n Greater than 0
-     * @return integer
+     * @return long type value
      */
     public static long loopFib(int n) {
         if (n <= 2) {
@@ -54,7 +54,7 @@ public class FibonacciImplementation {
      * and add a cache to save intermediate res
      *
      * @param n Greater than 0
-     * @return integer
+     * @return long type value
      */
     public static long cacheRecFib(int n) {
         if (n <= 2) {
@@ -74,7 +74,7 @@ public class FibonacciImplementation {
      * @param n   Greater than 0
      * @param res The result of the current calculation
      * @param pre The result of the previous calculation
-     * @return
+     * @return long type value
      */
     public static long tailRecFib(int n, long res, long pre) {
         if (n <= 2) {

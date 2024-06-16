@@ -84,6 +84,7 @@ public class InsertSort {
     }
 
     public static void doMerge(Integer[] arr, int left, int mid, int right) {
+        //When the amount of data is too large, it may be slow due to memory limitations, and can be declared outside the method
         Integer[] temp = new Integer[arr.length];
         int p1 = left;
         int p2 = mid + 1;

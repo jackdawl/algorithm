@@ -13,9 +13,11 @@ public class MeetRoomPlan {
                 new Meet(5, 18, 20),
                 new Meet(6, 9, 12)));
 
+        //key 1: greedy strategy: sorting
         list.sort(null);
         int avaTime = 8;
         for (Meet meet : list) {
+            //key 2: Achieve global optimality through local optimality
             if (meet.getStartTime() > avaTime) {
                 System.out.println(meet);
                 avaTime = meet.getEndTime();
